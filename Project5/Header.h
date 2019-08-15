@@ -8,6 +8,7 @@
 class Test {
 	int num= 0;
 	std::string name = "bob";
+	bool neutered = false;
 
 public:
 	Test();
@@ -15,6 +16,8 @@ public:
 	void set_num(int new_num);
 	std::string get_name();
 	void set_name(std::string);
+	void set_neutered(bool new_neutered);
+	bool get_neutered();
 };
 
 class node {
