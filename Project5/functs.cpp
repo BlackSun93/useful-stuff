@@ -41,7 +41,7 @@ void node::remove(Test toremove, node* *head) {
 		return;
 	}
 
-	if (toremove.get_num() == (*head)->data.get_num()) { //had to use (*head) to get around errors when passing head into the function regarding pointer dereferencing
+	if (toremove.get_num() == (*head)->data.get_num()) { //had to use (*head) to reference the pointer to the head of the list instead of the head of the list itself.
 		temp = *head;
 		*head = (*head)->next;
 		delete temp;
