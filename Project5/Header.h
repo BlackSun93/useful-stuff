@@ -34,13 +34,14 @@ public:
 
 	void printList(node *node)                         
 	{
+		std::cout << "Printing the list! data is printed in this order \nName| Num| neutered|\n";
 		if (node == NULL) {
 			std::cout << "the list is empty!\n";
 			return;
 		}
 		while (node != NULL)
 		{
-			std::cout << " " << node->data.get_name() << " " << node->data.get_num() << "\n";
+			std::cout << " " << node->data.get_name() << " " << node->data.get_num() << " " << node->data.get_neutered() <<"\n";
 			node = node->next;
 		}
 	}
