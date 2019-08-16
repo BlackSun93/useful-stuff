@@ -20,12 +20,15 @@ int main() {
 		std::cout << "please make a choice! 1 to add to list, 2 to delete from the list, 7 to print list, 8 to delete the list and 40 to quit\n";
 		std::cin >> choice;
 		if (choice == 1) {
-			std::cout << "enter a name and a number\n";
+			std::cout << "enter a name\n";
 			std::cin >> input;
 			Newtest->set_name(input);
+			std::cout << "enter a number\n";
 			std::cin >> input2;
 			Newtest->set_num(input2);
-
+			std::cout << "Is this test object neutered? true (1) or false (0)\n";
+			std::cin >> input3;
+			Newtest->set_neutered(input3);
 			thelist.addnode(*Newtest, &head);
 		}
 
