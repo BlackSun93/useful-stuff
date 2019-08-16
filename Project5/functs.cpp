@@ -18,6 +18,12 @@ std::string Test::get_name() {
 void Test::set_name(std::string new_name) {
 	name = new_name;
 }
+bool Test::get_neutered() {
+	return neutered;
+}
+void Test::set_neutered(bool new_neutered) {
+	neutered = new_neutered;
+}
 
 void node::addnode(Test new_test, node* *head_ref) {
 	node* new_node = new node;
